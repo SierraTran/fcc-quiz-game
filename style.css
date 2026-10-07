@@ -19,8 +19,9 @@ body {
 .container {
   background-color: white;
   border-radius: 1rem;
-  box-shadow: 0 10px 30 px rgba(0, 0, 0, 0.1);
-  width: 600px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%; 
+  max-width: 600px;
   overflow: hidden;
   position: relative;
 }
@@ -32,15 +33,14 @@ body {
   text-align: center;
 }
 
-.screen active {
+.screen.active {
   display: block;
 }
 
 /* START SCREEN */
-
 #start-screen h1 {
   color: #e86a33;
-  margin-bottom: 2px;
+  margin-bottom: 20px;
   font-size: 2.5rem;
 }
 
@@ -120,8 +120,7 @@ body {
 }
 
 /* RESULTS SCREEN */
-
-#results-screen h1 {
+#result-screen h1 {
   color: #e86a33;
   margin-bottom: 30px;
 }
@@ -139,7 +138,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.result-message {
+#result-message {
   font-size: 1.5rem;
   font-weight: 600;
   color: #e86a33;
